@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  agent:
+    build: "./"
+    image: agent-syspad
+    container_name: agent-container
+    ports:
+      - "3000:3000"
+    networks:
+      - backend_network
+    restart: always
+
+networks:
+  backend_network:
+    external:
+      name: back-end_syspad-network
