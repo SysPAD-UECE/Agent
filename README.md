@@ -1,29 +1,38 @@
-**SysPAD Monitor Agent - v1.2.0**
+# SysPAD Monitor Agent - v1.2.0
 
-**Description**
+## Description
 
 The Database Monitor Agent is an application developed in Flask, a Python web development framework. The agent has the function of monitoring and recording data insertion, update and deletion operations on a specific database.
 
-**Key Features**
+## Key Features
 
 - Agent start
 - Agent database start
 - Agent verification
 
-**Complete Documentation**
+## Complete Documentation
 
 The complete API documentation, including details about all available endpoints, request parameters, response formats, and usage examples, can be found at [DOCUMENTATION LINK](https://github.com/FRIDA-LACNIC-UECE/documentation/blob/main/SysPAD%20Documentation.pdf) or SWAGGER DOCUMENTATION at http://localhost:3000 after executed.
 
-**Technologies Used**
+
+## Technologies Used
 
 - Programming Language: Python (Version 3.10)
 - Framework/API/Web Framework: Flask Framework
 - Supported Database: MySQL and PostgreSQL
 - Object Relational Mapping: SqlAlchemy
 
-**Installation and Usage**
+## Requirements
 
-**Without docker:**  
+For the initialization of database monitoring by the Agent, the user must perform the following requirements:
+
+- The client's database must have its encrypted copy in the cloud and be properly anonymized. To encrypt and anonymize the database, the user must use the SysPAD data protection web application.
+
+- If the back-end API is being run by the Docker service, the agent should also be run using Docker.
+
+## Installation and Usage
+
+### Without docker:
 
 1. Clone this repository to your local machine using the following command:
 
@@ -56,15 +65,24 @@ The complete API documentation, including details about all available endpoints,
    python3 application.py
    ```
 
-**With docker:** 
+### With docker:
 1. Start the docker compose:
 
    ```
    docker compose up
    ```
 
+## Test Users
 
-**Contributing**
+### Guest user:
+- Email: convidado@example.com
+- Password: Convidado@123
+
+### Admin user:
+- Email: admin@example.com
+- Password: Admin@123
+
+## Contributing
 
 If you would like to contribute to the project, please follow these steps:
 
